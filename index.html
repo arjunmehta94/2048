@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>2048</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="static/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/main.css"/>
+  </head>
+  <body>
+    <div>
+        <button id='start'>Start</button>
+    </div>
+    <table align="center" id="table"></table>
+    <script type="text/javascript">
+    var started = false;
+    var game = require('2048');
+    var board = null;
+    game.startClick($('#start'), started, game, board);
+    </script>
+    <div id="action"></div>
+  </body>
+</html>
